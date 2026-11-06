@@ -38,9 +38,11 @@ em{font-style:normal}
 .sub{margin-top:18px;font-size:clamp(15px,1.2vw,18px);max-width:54ch;color:#fff}
 .js .hero-lg img{clip-path:inset(0 100% 0 0);animation:abre .5s cubic-bezier(.6,0,.2,1) .2s forwards}
 .js .plato{animation:plato .7s cubic-bezier(.6,0,.2,1) forwards}
-.js .tag{clip-path:inset(-20% 100% -20% 0);animation:abre .45s cubic-bezier(.5,0,.3,1) .5s forwards}
+.js .tag{clip-path:inset(-80% 100% -80% -15%);animation:abre-tag .45s cubic-bezier(.5,0,.3,1) .5s forwards}
 .js .hero .sub,.js .hero .acts{opacity:0;transform:translateY(10px);animation:sobe .4s ease-out .45s forwards}
 @keyframes abre{to{clip-path:inset(-20% 0 -20% 0)}}
+/* A cursiva Reey solta a cauda do S e os floreios fora da caixa da linha; a máscara final folga pros lados e pra cima, senão a letra sai cortada. */
+@keyframes abre-tag{to{clip-path:inset(-80% -15% -80% -15%)}}
 @keyframes plato{0%{opacity:1;transform:scaleX(0)}45%{opacity:1;transform:scaleX(1)}100%{opacity:0;transform:scaleX(1)}}
 @keyframes sobe{to{opacity:1;transform:none}}
 .acts{display:flex;flex-wrap:wrap;gap:12px 26px;margin-top:24px;align-items:center}
